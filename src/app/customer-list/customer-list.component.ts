@@ -113,6 +113,6 @@ export class CustomerListComponent implements OnInit {
 
   SignOut() {
     localStorage.clear();
-    window.location.href = "http://localhost:2525";
+    window.location.href = "https://epic-montalcini-25bb4a.netlify.com";
   }
 }

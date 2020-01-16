@@ -26,7 +26,7 @@ export class SignUpComponent implements OnInit {
 
   ngOnInit() {
     if (localStorage.getItem('UserStatus') != undefined) {
-      window.location.href = "http://localhost:2525/customer-list";
+      window.location.href = "https://epic-montalcini-25bb4a.netlify.com/customer-list";
     }
   }
 
@@ -97,7 +97,7 @@ export class SignUpComponent implements OnInit {
           this.messageService.add({ severity: 'success', summary: '', detail: 'Logged In Successfully' });
           localStorage.setItem('UserStatus', 'Authenticated');
           localStorage.setItem('Email', response[0]["Email"]);
-          window.location.href = "http://localhost:2525/customer-list";
+          window.location.href = "https://epic-montalcini-25bb4a.netlify.com/customer-list";
           
         }, error => {
           this.messageService.add({ severity: 'error', summary: '', detail: 'Invalid Credentials' });
